@@ -1,0 +1,16 @@
+api login - POST
+	-> nhận dữ liệu từ BODY của request được format theo jwt
+		mật khẩu được mã hóa bcrypt trước khi gửi
+	-> trả về cho người dùng access token
+api logout - GET
+	-> hủy TTL của access token
+api register - POST
+	-> tạo user/pass -> pass được lưu vào db sau khi được mã hóa bcrypt
+
+api helloworld - GET
+	-> nếu người dùng đã đăng nhập -> trả về mess "Hello world" nếu k thì "None"
+
+
+d gi nhieu thế v:
+django nó chia thế
+cho viet api dau
